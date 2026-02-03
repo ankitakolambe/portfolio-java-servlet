@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #121426;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(18, 20, 38, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2dd1a0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(135deg, #2dd1a0, #ff7c7c);
+  color: #fff;
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: #2dd1a0;
+}
+
+/* ================= HERO ================= */
+.hero-section {
+  min-height: 100vh;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #0f111e, #1a1c2f);
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #2dd1a0;
+  margin: 12px 0;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-btn,
+.hero-btn-outline {
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hero-btn {
+  background: #2dd1a0;
+  color: #fff;
+}
+
+.hero-btn:hover {
+  background: linear-gradient(135deg, #2dd1a0, #ff7c7c);
+  transform: translateY(-3px);
+}
+
+.hero-btn-outline {
+  border: 2px solid #2dd1a0;
+  color: #2dd1a0;
+}
+
+.hero-btn-outline:hover {
+  background: #2dd1a0;
+  color: #fff;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 4px solid #2dd1a0;
+  object-fit: cover;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 100px 20px 70px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ================= ABOUT ================= */
+.about-section {
+  background: #1a1c2f;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* ================= EXPERIENCE ================= */
+.timeline {
+  margin-top: 40px;
+}
+
+/* ================= PROJECTS ================= */
+.projects-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #1a1c2f;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-info {
+  padding: 18px;
+}
+
+.card-info h3 {
+  color: #2dd1a0;
+  margin-bottom: 8px;
+}
+
+/* ================= CONTACT ================= */
+.contact-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background: #1a1c2f;
+  padding: 32px 28px;
+  border-radius: 14px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #2dd1a0;
+  margin-bottom: 8px;
+}
+
+.contact-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+  color: #cfcfcf;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #121426;
+  color: #fff;
+}
+
+form button {
+  background: #2dd1a0;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #ff7c7c;
+}
+
+/* ================= ANIMATIONS ================= */
+.animate-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #1a1c2f;
+  padding: 15px 20px;
+  border-top: 2px solid #2dd1a0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: -220px;
+    background: #121426;
+    flex-direction: column;
+    padding: 15px;
+    transition: 0.3s;
+  }
+
+  nav ul.show {
+    right: 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
